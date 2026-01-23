@@ -32,11 +32,11 @@ function App() {
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         heroVisible ? 'bg-transparent shadow-none' : 'bg-white shadow-md'
       }`}>
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between">
           <div className="flex items-center">
             <img
               alt="Ademicon"
-              className="h-20 md:h-32 w-auto"
+              className="h-14 sm:h-20 md:h-32 w-auto"
               src="/logo-ademicon.png"
             />
           </div>
@@ -44,9 +44,10 @@ function App() {
             href={whatsappLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-3 rounded-lg font-medium transition-all duration-300 whitespace-nowrap cursor-pointer bg-emerald-700 text-white hover:bg-emerald-800"
+            className="px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-base rounded-lg font-medium transition-all duration-300 whitespace-nowrap cursor-pointer bg-emerald-700 text-white hover:bg-emerald-800"
           >
-            Falar no WhatsApp
+            <span className="hidden sm:inline">Falar no WhatsApp</span>
+            <span className="sm:hidden">WhatsApp</span>
           </a>
         </div>
       </nav>
@@ -63,21 +64,22 @@ function App() {
         </div>
 
         {/* Hero Content */}
-        <div className="relative z-10 w-full max-w-5xl mx-auto px-6 text-center">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+        <div className="relative z-10 w-full max-w-5xl mx-auto px-4 sm:px-6 text-center">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 sm:mb-6 leading-tight">
             Consórcio imobiliário como estratégia de planejamento patrimonial
           </h1>
-          <p className="text-xl md:text-2xl text-white/95 mb-10 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl md:text-2xl text-white/95 mb-8 sm:mb-10 max-w-3xl mx-auto leading-relaxed">
             Planejamento imobiliário sem juros, com visão de longo prazo e atendimento direto com licenciado Ademicon.
           </p>
           <a
             href={whatsappLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 px-8 py-4 bg-emerald-700 text-white text-lg font-medium rounded-lg hover:bg-emerald-800 transition-all duration-300 shadow-lg hover:shadow-xl whitespace-nowrap cursor-pointer"
+            className="inline-flex items-center gap-2 sm:gap-3 px-6 py-3 sm:px-8 sm:py-4 bg-emerald-700 text-white text-base sm:text-lg font-medium rounded-lg hover:bg-emerald-800 transition-all duration-300 shadow-lg hover:shadow-xl cursor-pointer"
           >
-            <i className="ri-whatsapp-line text-2xl"></i>
-            Conversar com calma no WhatsApp
+            <i className="ri-whatsapp-line text-xl sm:text-2xl"></i>
+            <span className="hidden sm:inline">Conversar com calma no WhatsApp</span>
+            <span className="sm:hidden">Conversar no WhatsApp</span>
           </a>
         </div>
 
@@ -91,9 +93,9 @@ function App() {
       </section>
 
       {/* Problem Section */}
-      <section className="py-24 px-6 bg-gray-50">
+      <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 bg-gray-50">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-8">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-gray-900 mb-6 sm:mb-8">
             Você trabalha, paga contas… mas sente que o futuro está sempre ficando para depois?
           </h2>
           <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
@@ -114,60 +116,60 @@ function App() {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-24 px-6 bg-white">
+      <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 bg-white">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">
+          <div className="text-center mb-10 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
               Consórcio imobiliário não é dívida. É ferramenta.
             </h2>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
               Muita gente confunde consórcio com financiamento. Mas a diferença é fundamental: <strong>consórcio é planejamento</strong>, não endividamento.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
-            <div className="bg-gray-50 rounded-lg p-8 hover:shadow-lg transition-shadow duration-300">
-              <div className="w-14 h-14 flex items-center justify-center bg-emerald-700 text-white rounded-lg mb-5">
-                <i className="ri-percent-line text-2xl"></i>
+          <div className="grid sm:grid-cols-2 gap-4 sm:gap-6 md:gap-8 mb-8 sm:mb-12">
+            <div className="bg-gray-50 rounded-lg p-5 sm:p-6 md:p-8 hover:shadow-lg transition-shadow duration-300">
+              <div className="w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center bg-emerald-700 text-white rounded-lg mb-4 sm:mb-5">
+                <i className="ri-percent-line text-xl sm:text-2xl"></i>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Sem juros</h3>
-              <p className="text-base text-gray-700 leading-relaxed">
+              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 sm:mb-3">Sem juros</h3>
+              <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
                 Você paga apenas o valor do bem mais a taxa administrativa. Nada de juros compostos que dobram o valor ao longo dos anos.
               </p>
             </div>
 
-            <div className="bg-gray-50 rounded-lg p-8 hover:shadow-lg transition-shadow duration-300">
-              <div className="w-14 h-14 flex items-center justify-center bg-emerald-700 text-white rounded-lg mb-5">
-                <i className="ri-calendar-check-line text-2xl"></i>
+            <div className="bg-gray-50 rounded-lg p-5 sm:p-6 md:p-8 hover:shadow-lg transition-shadow duration-300">
+              <div className="w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center bg-emerald-700 text-white rounded-lg mb-4 sm:mb-5">
+                <i className="ri-calendar-check-line text-xl sm:text-2xl"></i>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Planejamento previsível</h3>
-              <p className="text-base text-gray-700 leading-relaxed">
+              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 sm:mb-3">Planejamento previsível</h3>
+              <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
                 Parcelas fixas que cabem no seu orçamento. Você sabe exatamente quanto vai pagar e por quanto tempo.
               </p>
             </div>
 
-            <div className="bg-gray-50 rounded-lg p-8 hover:shadow-lg transition-shadow duration-300">
-              <div className="w-14 h-14 flex items-center justify-center bg-emerald-700 text-white rounded-lg mb-5">
-                <i className="ri-line-chart-line text-2xl"></i>
+            <div className="bg-gray-50 rounded-lg p-5 sm:p-6 md:p-8 hover:shadow-lg transition-shadow duration-300">
+              <div className="w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center bg-emerald-700 text-white rounded-lg mb-4 sm:mb-5">
+                <i className="ri-line-chart-line text-xl sm:text-2xl"></i>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Construção de patrimônio</h3>
-              <p className="text-base text-gray-700 leading-relaxed">
+              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 sm:mb-3">Construção de patrimônio</h3>
+              <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
                 Cada parcela é um passo em direção ao seu objetivo. É disciplina financeira transformada em ativo real.
               </p>
             </div>
 
-            <div className="bg-gray-50 rounded-lg p-8 hover:shadow-lg transition-shadow duration-300">
-              <div className="w-14 h-14 flex items-center justify-center bg-emerald-700 text-white rounded-lg mb-5">
-                <i className="ri-shield-check-line text-2xl"></i>
+            <div className="bg-gray-50 rounded-lg p-5 sm:p-6 md:p-8 hover:shadow-lg transition-shadow duration-300">
+              <div className="w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center bg-emerald-700 text-white rounded-lg mb-4 sm:mb-5">
+                <i className="ri-shield-check-line text-xl sm:text-2xl"></i>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">Segurança e transparência</h3>
-              <p className="text-base text-gray-700 leading-relaxed">
+              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 sm:mb-3">Segurança e transparência</h3>
+              <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
                 Regulamentado pelo Banco Central, com regras claras e proteção ao consorciado.
               </p>
             </div>
           </div>
 
-          <div className="bg-emerald-50 rounded-lg p-8 border-l-4 border-emerald-700">
+          <div className="bg-emerald-50 rounded-lg p-5 sm:p-8 border-l-4 border-emerald-700">
             <p className="text-lg text-gray-800 leading-relaxed">
               <strong>O consórcio não é para quem quer resolver tudo amanhã.</strong> É para quem entende que patrimônio se constrói com estratégia, disciplina e visão de longo prazo. É para quem prefere pagar menos e planejar melhor.
             </p>
@@ -176,27 +178,27 @@ function App() {
       </section>
 
       {/* About Section */}
-      <section className="py-24 px-6 bg-gray-50">
+      <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 bg-gray-50">
         <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-gray-900 mb-4">
               Quem vai conversar com você
             </h2>
           </div>
 
-          <div className="bg-white rounded-lg shadow-sm p-10 md:p-12">
-            <div className="flex flex-col md:flex-row gap-10 items-center">
+          <div className="bg-white rounded-lg shadow-sm p-6 sm:p-8 md:p-12">
+            <div className="flex flex-col md:flex-row gap-6 sm:gap-8 md:gap-10 items-center">
               <div className="flex-shrink-0">
-                <div className="w-48 h-48 rounded-lg overflow-hidden bg-gray-200 flex flex-col items-center justify-center">
-                  <i className="ri-user-line text-6xl text-gray-400"></i>
-                  <span className="text-sm text-gray-400 mt-2">Sem foto</span>
+                <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-lg overflow-hidden bg-gray-200 flex flex-col items-center justify-center">
+                  <i className="ri-user-line text-4xl sm:text-5xl md:text-6xl text-gray-400"></i>
+                  <span className="text-xs sm:text-sm text-gray-400 mt-2">Sem foto</span>
                 </div>
               </div>
               <div className="flex-1 text-center md:text-left">
-                <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
+                <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-2 sm:mb-3">
                   Rafael Bernardo Garcia - Licenciado Ademicon
                 </h3>
-                <div className="space-y-4 text-base text-gray-700 leading-relaxed mt-6">
+                <div className="space-y-3 sm:space-y-4 text-sm sm:text-base text-gray-700 leading-relaxed mt-4 sm:mt-6">
                   <p>
                     Atuação focada em <strong>planejamento imobiliário</strong> e construção de patrimônio no longo prazo. Não trabalho com venda agressiva ou promessas vazias.
                   </p>
@@ -223,74 +225,74 @@ function App() {
       </section>
 
       {/* Target Audience Section */}
-      <section className="py-24 px-6 bg-white">
+      <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 bg-white">
         <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">
+          <div className="text-center mb-10 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
               Para quem essa conversa faz sentido
             </h2>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
               Esta não é uma página de venda agressiva. É um convite para uma conversa estratégica sobre planejamento patrimonial.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6 mb-12">
-            <div className="flex items-start gap-4 bg-gray-50 rounded-lg p-6 hover:bg-emerald-50 transition-colors duration-300">
-              <div className="w-12 h-12 flex items-center justify-center bg-emerald-700 text-white rounded-lg flex-shrink-0">
-                <i className="ri-compass-line text-xl"></i>
+          <div className="grid sm:grid-cols-2 gap-3 sm:gap-4 md:gap-6 mb-8 sm:mb-12">
+            <div className="flex items-start gap-3 sm:gap-4 bg-gray-50 rounded-lg p-4 sm:p-5 md:p-6 hover:bg-emerald-50 transition-colors duration-300">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center bg-emerald-700 text-white rounded-lg flex-shrink-0">
+                <i className="ri-compass-line text-lg sm:text-xl"></i>
               </div>
-              <p className="text-base text-gray-800 leading-relaxed pt-2">
+              <p className="text-sm sm:text-base text-gray-800 leading-relaxed pt-1 sm:pt-2">
                 Busca planejamento e previsibilidade financeira
               </p>
             </div>
 
-            <div className="flex items-start gap-4 bg-gray-50 rounded-lg p-6 hover:bg-emerald-50 transition-colors duration-300">
-              <div className="w-12 h-12 flex items-center justify-center bg-emerald-700 text-white rounded-lg flex-shrink-0">
-                <i className="ri-home-heart-line text-xl"></i>
+            <div className="flex items-start gap-3 sm:gap-4 bg-gray-50 rounded-lg p-4 sm:p-5 md:p-6 hover:bg-emerald-50 transition-colors duration-300">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center bg-emerald-700 text-white rounded-lg flex-shrink-0">
+                <i className="ri-home-heart-line text-lg sm:text-xl"></i>
               </div>
-              <p className="text-base text-gray-800 leading-relaxed pt-2">
+              <p className="text-sm sm:text-base text-gray-800 leading-relaxed pt-1 sm:pt-2">
                 Quer construir patrimônio sem pagar juros
               </p>
             </div>
 
-            <div className="flex items-start gap-4 bg-gray-50 rounded-lg p-6 hover:bg-emerald-50 transition-colors duration-300">
-              <div className="w-12 h-12 flex items-center justify-center bg-emerald-700 text-white rounded-lg flex-shrink-0">
-                <i className="ri-book-open-line text-xl"></i>
+            <div className="flex items-start gap-3 sm:gap-4 bg-gray-50 rounded-lg p-4 sm:p-5 md:p-6 hover:bg-emerald-50 transition-colors duration-300">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center bg-emerald-700 text-white rounded-lg flex-shrink-0">
+                <i className="ri-book-open-line text-lg sm:text-xl"></i>
               </div>
-              <p className="text-base text-gray-800 leading-relaxed pt-2">
+              <p className="text-sm sm:text-base text-gray-800 leading-relaxed pt-1 sm:pt-2">
                 Prefere entender antes de decidir
               </p>
             </div>
 
-            <div className="flex items-start gap-4 bg-gray-50 rounded-lg p-6 hover:bg-emerald-50 transition-colors duration-300">
-              <div className="w-12 h-12 flex items-center justify-center bg-emerald-700 text-white rounded-lg flex-shrink-0">
-                <i className="ri-time-line text-xl"></i>
+            <div className="flex items-start gap-3 sm:gap-4 bg-gray-50 rounded-lg p-4 sm:p-5 md:p-6 hover:bg-emerald-50 transition-colors duration-300">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center bg-emerald-700 text-white rounded-lg flex-shrink-0">
+                <i className="ri-time-line text-lg sm:text-xl"></i>
               </div>
-              <p className="text-base text-gray-800 leading-relaxed pt-2">
+              <p className="text-sm sm:text-base text-gray-800 leading-relaxed pt-1 sm:pt-2">
                 Valoriza visão de longo prazo
               </p>
             </div>
 
-            <div className="flex items-start gap-4 bg-gray-50 rounded-lg p-6 hover:bg-emerald-50 transition-colors duration-300">
-              <div className="w-12 h-12 flex items-center justify-center bg-emerald-700 text-white rounded-lg flex-shrink-0">
-                <i className="ri-user-heart-line text-xl"></i>
+            <div className="flex items-start gap-3 sm:gap-4 bg-gray-50 rounded-lg p-4 sm:p-5 md:p-6 hover:bg-emerald-50 transition-colors duration-300">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center bg-emerald-700 text-white rounded-lg flex-shrink-0">
+                <i className="ri-user-heart-line text-lg sm:text-xl"></i>
               </div>
-              <p className="text-base text-gray-800 leading-relaxed pt-2">
+              <p className="text-sm sm:text-base text-gray-800 leading-relaxed pt-1 sm:pt-2">
                 Aprecia atendimento humano e transparente
               </p>
             </div>
 
-            <div className="flex items-start gap-4 bg-gray-50 rounded-lg p-6 hover:bg-emerald-50 transition-colors duration-300">
-              <div className="w-12 h-12 flex items-center justify-center bg-emerald-700 text-white rounded-lg flex-shrink-0">
-                <i className="ri-shield-star-line text-xl"></i>
+            <div className="flex items-start gap-3 sm:gap-4 bg-gray-50 rounded-lg p-4 sm:p-5 md:p-6 hover:bg-emerald-50 transition-colors duration-300">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center bg-emerald-700 text-white rounded-lg flex-shrink-0">
+                <i className="ri-shield-star-line text-lg sm:text-xl"></i>
               </div>
-              <p className="text-base text-gray-800 leading-relaxed pt-2">
+              <p className="text-sm sm:text-base text-gray-800 leading-relaxed pt-1 sm:pt-2">
                 Busca segurança e solidez nas decisões
               </p>
             </div>
           </div>
 
-          <div className="bg-gray-50 rounded-lg p-8 border-l-4 border-gray-400">
+          <div className="bg-gray-50 rounded-lg p-5 sm:p-8 border-l-4 border-gray-400">
             <p className="text-lg text-gray-800 leading-relaxed">
               <strong>Se você se identificou com esses pontos</strong>, vale a pena conversarmos. Não há compromisso, não há pressão. Apenas uma conversa clara sobre possibilidades reais de planejamento imobiliário.
             </p>
@@ -299,50 +301,50 @@ function App() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 px-6 bg-emerald-700">
+      <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 bg-emerald-700">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white mb-4 sm:mb-6">
             Sem compromisso. Sem pressão.
           </h2>
-          <p className="text-xl text-white/95 mb-4 leading-relaxed">
+          <p className="text-lg sm:text-xl text-white/95 mb-3 sm:mb-4 leading-relaxed">
             Vamos conversar com calma sobre planejamento imobiliário e ver se faz sentido para você.
           </p>
-          <p className="text-lg text-white/90 mb-10 leading-relaxed">
+          <p className="text-base sm:text-lg text-white/90 mb-8 sm:mb-10 leading-relaxed">
             Não há obrigação de fechar nada. É apenas uma conversa transparente sobre possibilidades reais.
           </p>
           <a
             href={whatsappLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 px-10 py-5 bg-white text-emerald-700 text-lg font-semibold rounded-lg hover:bg-gray-50 transition-all duration-300 shadow-lg hover:shadow-xl whitespace-nowrap cursor-pointer"
+            className="inline-flex items-center gap-2 sm:gap-3 px-6 py-4 sm:px-10 sm:py-5 bg-white text-emerald-700 text-base sm:text-lg font-semibold rounded-lg hover:bg-gray-50 transition-all duration-300 shadow-lg hover:shadow-xl cursor-pointer"
           >
-            <i className="ri-whatsapp-line text-3xl"></i>
+            <i className="ri-whatsapp-line text-2xl sm:text-3xl"></i>
             Chamar no WhatsApp
           </a>
-          <div className="mt-10 flex items-center justify-center gap-3 text-white/90">
-            <i className="ri-time-line text-2xl"></i>
-            <p className="text-base">Resposta rápida e atendimento direto com Rafael</p>
+          <div className="mt-8 sm:mt-10 flex items-center justify-center gap-2 sm:gap-3 text-white/90">
+            <i className="ri-time-line text-xl sm:text-2xl"></i>
+            <p className="text-sm sm:text-base">Resposta rápida e atendimento direto com Rafael</p>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-16 px-6">
+      <footer className="bg-gray-900 text-white py-12 sm:py-16 px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-12 mb-12">
-            <div className="md:col-span-1">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-10 md:gap-12 mb-8 sm:mb-12">
+            <div className="sm:col-span-2 md:col-span-1">
               <img
                 alt="Ademicon"
-                className="h-28 w-auto mb-4"
+                className="h-20 sm:h-24 md:h-28 w-auto mb-4"
                 src="/logo-ademicon.png"
               />
-              <p className="text-base text-gray-400 leading-relaxed">
+              <p className="text-sm sm:text-base text-gray-400 leading-relaxed">
                 Planejamento imobiliário com visão de longo prazo e atendimento transparente.
               </p>
             </div>
 
-            <div className="md:col-span-1">
-              <h4 className="text-lg font-bold mb-4">Contato</h4>
+            <div>
+              <h4 className="text-base sm:text-lg font-bold mb-3 sm:mb-4">Contato</h4>
               <div className="space-y-3">
                 <div className="flex items-start gap-3">
                   <i className="ri-user-line text-emerald-400 text-xl mt-1"></i>
@@ -362,35 +364,35 @@ function App() {
               </div>
             </div>
 
-            <div className="md:col-span-1">
-              <h4 className="text-lg font-bold mb-4">Sobre o Consórcio</h4>
-              <ul className="space-y-2 text-sm text-gray-400">
+            <div>
+              <h4 className="text-base sm:text-lg font-bold mb-3 sm:mb-4">Sobre o Consórcio</h4>
+              <ul className="space-y-2 text-xs sm:text-sm text-gray-400">
                 <li className="flex items-start gap-2">
-                  <i className="ri-check-line text-emerald-400 mt-1"></i>
+                  <i className="ri-check-line text-emerald-400 mt-0.5 sm:mt-1"></i>
                   <span>Sem juros</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <i className="ri-check-line text-emerald-400 mt-1"></i>
+                  <i className="ri-check-line text-emerald-400 mt-0.5 sm:mt-1"></i>
                   <span>Planejamento de longo prazo</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <i className="ri-check-line text-emerald-400 mt-1"></i>
+                  <i className="ri-check-line text-emerald-400 mt-0.5 sm:mt-1"></i>
                   <span>Regulamentado pelo Banco Central</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <i className="ri-check-line text-emerald-400 mt-1"></i>
+                  <i className="ri-check-line text-emerald-400 mt-0.5 sm:mt-1"></i>
                   <span>Atendimento transparente</span>
                 </li>
               </ul>
             </div>
           </div>
 
-          <div className="border-t border-gray-800 pt-8">
-            <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-              <p className="text-base text-gray-400 text-center md:text-left">
+          <div className="border-t border-gray-800 pt-6 sm:pt-8">
+            <div className="flex flex-col md:flex-row justify-between items-center gap-3 sm:gap-4">
+              <p className="text-sm sm:text-base text-gray-400 text-center md:text-left">
                 <strong className="text-emerald-400">Consórcio é planejamento. Não promessa.</strong>
               </p>
-              <div className="text-sm text-gray-500 text-center md:text-right">
+              <div className="text-xs sm:text-sm text-gray-500 text-center md:text-right">
                 <p>© {new Date().getFullYear()} Todos os direitos reservados</p>
                 <p className="mt-1">
                   Desenvolvido por{' '}
