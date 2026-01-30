@@ -57,12 +57,12 @@ function App() {
                 Início
               </Link>
               <Link
-                to="/sobre-consultor"
+                to="/depoimentos"
                 className={`text-sm lg:text-base font-medium transition-colors duration-300 cursor-pointer ${
                   isScrolled ? 'text-gray-800 hover:text-[#0A4D68]' : 'text-white hover:text-gray-200'
                 }`}
               >
-                Sobre o Consultor
+                Depoimentos
               </Link>
               <a
                 href={getWhatsappLink('Olá! Gostaria de saber mais sobre consórcio imobiliário.')}
@@ -96,11 +96,11 @@ function App() {
                   Início
                 </Link>
                 <Link
-                  to="/sobre-consultor"
+                  to="/depoimentos"
                   className="text-base font-medium text-gray-700 hover:text-[#0A4D68] px-2 py-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Sobre o Consultor
+                  Depoimentos
                 </Link>
                 <a
                   href={getWhatsappLink('Olá! Gostaria de saber mais sobre consórcio imobiliário.')}
