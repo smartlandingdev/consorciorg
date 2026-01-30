@@ -18,7 +18,7 @@ function SobreConsultor() {
               <Link to="/">
                 <img
                   alt="RG Consórcios & Investimentos"
-                  className="h-10 sm:h-14 lg:h-16 w-auto"
+                  className="h-12 sm:h-14 lg:h-16 w-auto"
                   src="/logo.png"
                 />
               </Link>
@@ -280,7 +280,7 @@ function SobreConsultor() {
               <Link to="/">
                 <img
                   alt="RG Consórcios & Investimentos"
-                  className="h-10 sm:h-14 w-auto"
+                  className="h-12 sm:h-14 w-auto"
                   src="/logo.png"
                 />
               </Link>
